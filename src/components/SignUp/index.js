@@ -97,11 +97,11 @@ class SignUpFormBase extends Component {
 
 const SignUpForm = withNavigate(withFirebase(SignUpFormBase));
 
-const SignUpLink = () => {
+const SignUpLink = () => (
   <p>
     Don't have an account? <Link to={ROUTES.SIGN_UP}>Sign Up</Link>
   </p>
-}
+)
 
 const SignUpPage = () => (
   <div>
